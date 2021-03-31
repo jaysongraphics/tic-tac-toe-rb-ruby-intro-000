@@ -65,7 +65,7 @@ def turn_count(board)
 end
 
 
-def current_player(array)
+def current_player(board)
   turns_counted = turn_count(array)
     if
       turns_counted.even? == true
@@ -76,7 +76,7 @@ def current_player(array)
 end
 
 
-def won?(array)
+def won?(board)
   WIN_COMBINATIONS.find do |win_combination|
     win_index_1 = win_combination[0]
     win_index_2 = win_combination[1]
