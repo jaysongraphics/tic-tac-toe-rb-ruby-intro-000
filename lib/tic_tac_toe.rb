@@ -128,7 +128,6 @@ def winner(array)
     end
 end
 
-
 def play(array)
   until over?(array) == true
     turn(array)
@@ -137,6 +136,6 @@ def play(array)
     player = array[won?(array)[0]]
     puts "Congratulations #{player}!"
   elsif draw?(array) == true
-    puts "Cat's Game!"
+    puts "draw!"
   end
 end
