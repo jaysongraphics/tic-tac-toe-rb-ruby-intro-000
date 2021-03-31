@@ -143,6 +143,6 @@ def play(array)
     player = array[won?(array)[0]]
     puts "Congratulations #{player}!"
   elsif draw?(array) == true
-    puts "draw!"
+    puts "Cat's Game!"
   end
 end
